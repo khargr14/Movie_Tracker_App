@@ -2,7 +2,8 @@ class Api::V1::MoviesController < ApplicationController
 
     def index
         movies = Movie.all
-        render json: movies
+        #render json: movies
+        render json: MovieSerializer.new(movies)
     end
 
     def show 
@@ -12,10 +13,16 @@ class Api::V1::MoviesController < ApplicationController
 
 
     def create
-        movie = Movie.create(movie_params)
-        movie.save!
-        render json: movie
-    end 
+        movie.new(movie_params)
+        #movie = Movie.create(movie_params)
+        #movie.save!
+        if movie save
+            render json: movie
+        else 
+            render json 
+            #{errors: movie errors full messages}, status: unprocessible-entity
+        end 
+    end  
 
     def update
         movie = Movie.find(params[:id])

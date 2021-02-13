@@ -731,3 +731,90 @@ Processing by Api::V1::MoviesController#index as HTML
 Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1410)
 
 
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:34:36 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:20: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+...er json: movie, status accepted 
+...                       ^~~~~~~~
+/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+...           render json {errors: movie errors full messages},...
+...                              ^
+/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+...rs: movie errors full messages}, status: unprocessible-entity
+...                              ^):
+  
+app/controllers/api/v1/movies_controller.rb:20: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+app/controllers/api/v1/movies_controller.rb:20: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+Started GET "/favicon.ico" for ::1 at 2021-02-13 14:34:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:35:20 -0500
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+...           render json {errors: movie errors full messages},...
+...                              ^
+/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+...rs: movie errors full messages}, status: unprocessible-entity
+...                              ^):
+  
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:35:47 -0500
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+...           render json {errors: movie errors full messages}
+...                              ^
+/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+...rs: movie errors full messages}
+...                              ^
+/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/movies_controller.rb:43: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+app/controllers/api/v1/movies_controller.rb:43: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/movies_controller.rb:22: syntax error, unexpected '}', expecting end
+app/controllers/api/v1/movies_controller.rb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:36:52 -0500
+Processing by Api::V1::MoviesController#index as HTML
+Completed 500 Internal Server Error in 8ms (Allocations: 2874)
+
+
+  
+NameError (undefined local variable or method `movie' for #<Api::V1::MoviesController:0x007f144558e728>
+Did you mean?  movies):
+  
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:38:32 -0500
+Processing by Api::V1::MoviesController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 763)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:40:57 -0500
+Processing by Api::V1::MoviesController#index as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 2111)
+
+
+  
+NameError (undefined local variable or method `movie' for #<Api::V1::MoviesController:0x007f1445863cc8>
+Did you mean?  movies):
+  
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-13 14:41:34 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 1.4ms | Allocations: 7431)
+
+
