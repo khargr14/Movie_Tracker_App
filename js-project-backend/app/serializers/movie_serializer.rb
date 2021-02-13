@@ -1,4 +1,4 @@
 class MovieSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :title, :director, :summary, :review, :rating, :user_id, :user
 end
