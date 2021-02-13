@@ -74,14 +74,17 @@ input[type=text] {
 
   #new-user-form {
       /* font-family: 'Montserrat', sans serfi; */
+      
       background: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 20vh;
+      height: 25vh;
       width: 20%;
+      
       margin: auto;
+      
       overflow: hidden;
       border-radius: 35px;
       font-size: 25px;
