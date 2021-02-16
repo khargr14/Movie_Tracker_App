@@ -19,8 +19,10 @@ class Api::V1::MoviesController < ApplicationController
         if movie save
             render json: movie
         else 
-            render json 
-            #{errors: movie errors full messages}, status: unprocessible-entity
+           # render json: {errors: movie errors full messages}, status: unprocessible-entity
+            #{errors: movie errors full messages}, status: unprocessible-
+            render json: {errors: movie.errors.full_messages}, status: :unprocessible_entity
+   
         end 
     end  
 
