@@ -9,19 +9,31 @@
 
     </head>
  <body>
-    <div class="page-title">What Do You Think Of This Movie???</div>
-    <div id="container">
-        <div id="form-container">
-            <form id="new-user-form">
-                <label>Enter Your Name:</label>
-                <input type="text" id="new-user-body" placeholder="Enter Your Name"/>
-                <input type="submit"/>
-            </form>
-        </div>
-    </div>
-<div id="movies-container" class="movies-container hidden" >
+    <div class="page-title">LIST A MOVIE </div>
+ 
+--------------------------------------------------------------------------------------------------------------------
+<div id="movie-container">
 
+<div class="form-container">
+
+    <form id="create-movie-form" > 
+  <!--need to add more of my attributes to the form--> 
+      <input id='input-title' type="text" name="title" value="" placeholder="Enter your  name..." class="input-text">
+      <br><br>
+      <textarea id='input-description' name="summary" rows="8" cols="80" value="" placeholder="Enter your movie summary..."></textarea>
+      <br><br>
+    
+      <br><br>
+   
+     
+      <br><br>
+  
+      <input id= 'create-button' type="submit" name="submit" value="Create New Movie" class="submit">
+    </form>
+  
+  </div> 
 </div>
+
  
 
 <script src="src/movie.js"></script>
