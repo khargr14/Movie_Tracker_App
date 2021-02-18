@@ -960,3 +960,1666 @@ Processing by Api::V1::MoviesController#index as */*
 Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.8ms | Allocations: 4186)
 
 
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 22:56:06 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 38ms (Views: 26.4ms | ActiveRecord: 2.2ms | Allocations: 17656)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:08:56 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 4.7ms | Allocations: 4820)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:35:35 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (1.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 103ms (Views: 89.6ms | ActiveRecord: 10.8ms | Allocations: 4820)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:35:45 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.8ms | Allocations: 4207)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:39:57 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (6.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 27.1ms | ActiveRecord: 6.9ms | Allocations: 4205)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:46:18 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 485ms (Views: 476.6ms | ActiveRecord: 7.6ms | Allocations: 4799)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:46:43 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.6ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:50:05 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (3.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 3.4ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:53:22 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 1.1ms | Allocations: 4182)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:53:59 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:54:13 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.7ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:54:20 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 1.0ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:54:58 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:55:05 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 76ms (Views: 49.7ms | ActiveRecord: 0.4ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:55:29 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.6ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:55:46 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:56:07 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.9ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:57:27 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.8ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:58:13 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 1.5ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:58:26 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:59:18 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.6ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-17 23:59:22 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 4182)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:01:45 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.5ms | Allocations: 4187)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:01:53 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.7ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:03:36 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:03:37 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:03:39 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:03:44 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.9ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:05:01 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.9ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:05:06 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:07:34 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:07:35 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:10:22 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 4186)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:15 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 654)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:17 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:17 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:17 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:17 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:36 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:36 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:40 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:17:45 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.9ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "We Can Be Heroes"], ["director", "YaYa Gosselin"], ["summary", "When alien invaders capture Earth’s superheroes, their kids must learn to work together to save their parents — and the planet"], ["review", "This we an ok movie"], ["rating", 3], ["user_id", 1], ["created_at", "2021-02-18 05:18:10.151243"], ["updated_at", "2021-02-18 05:18:10.151243"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Spenser Confidential"], ["director", "Mark Wahlberg"], ["summary", "Spenser, an ex-cop and ex-con, teams up with aspiring fighter Hawk to uncover a sinister conspiracy tied to the deaths of two Boston police officers."], ["review", "This is a great action movie"], ["rating", 4], ["user_id", 1], ["created_at", "2021-02-18 05:18:10.157336"], ["updated_at", "2021-02-18 05:18:10.157336"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Outside the Wire"], ["director", "Damson Idris"], ["summary", "In the near future, a drone pilot sent into a war zone finds himself paired with a top-secret android officer on a mission to stop a nuclear attack."], ["review", " This movie kept me on my toes"], ["rating", 5], ["user_id", 1], ["created_at", "2021-02-18 05:18:10.162861"], ["updated_at", "2021-02-18 05:18:10.162861"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Secret Life of Pets 2"], ["director", "Kevin Hart"], ["summary", "On a farm outside New York, Max aims to boost his confidence while in the city, Snowball attempts to rescue a tiger cub and Gidget pretends to be a cat."], ["review", "This is a cute movie for kids"], ["rating", 3], ["user_id", 1], ["created_at", "2021-02-18 05:18:10.167764"], ["updated_at", "2021-02-18 05:18:10.167764"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Good Burger"], ["director", "Kel Mitchell"], ["summary", "Working at a neighborhood fast-food joint, two teens try to save the restaurant when a giant burger franchise fires up the competition."], ["review", "This movie is good to watch to kill time"], ["rating", 2], ["user_id", 1], ["created_at", "2021-02-18 05:18:10.172453"], ["updated_at", "2021-02-18 05:18:10.172453"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Cloudy with a Chance of Meatballs 2"], ["director", "Bill Hader"], ["summary", "Inventor Flint Lockwood battles mutant food beasts created by his notorious machine, including shrimpanzees, tacodiles and jellyfish sandwiches"], ["review", "Great family movie"], ["rating", 3], ["user_id", 1], ["created_at", "2021-02-18 05:18:10.176923"], ["updated_at", "2021-02-18 05:18:10.176923"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:18:41 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3412)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:18:47 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 166)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:18:50 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 166)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:18:52 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 166)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:18:58 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 166)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:18:59 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:19:03 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:22 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1175)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:23 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:28 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:22:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:24:44 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 5ms (Allocations: 1174)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:26:28 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 5ms (Allocations: 1174)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:26:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 157)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:28:08 -0500
+Processing by Api::V1::MoviesController#index as */*
+Completed 500 Internal Server Error in 6ms (Allocations: 1174)
+
+
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/serializers/movie_serializer.rb:5: syntax error, unexpected end):
+  
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/serializers/movie_serializer.rb:5: syntax error, unexpected end
+app/controllers/api/v1/movies_controller.rb:6:in `index'
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:52 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 6.7ms | ActiveRecord: 1.0ms | Allocations: 8467)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:53 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1879)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:54 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1877)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:54 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:54 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:54 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:54 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:55 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:55 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:32:59 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:33:12 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 1870)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:34:42 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:36:38 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.1ms | Allocations: 7975)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:38:14 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:38:27 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:44:49 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 3.2ms | Allocations: 2477)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:45:04 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:45:33 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:46:53 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:46:54 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 00:46:55 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 01:59:34 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 4.5ms | Allocations: 2469)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 01:59:43 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:00:37 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:18 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.8ms | Allocations: 2468)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:27 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:28 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.4ms | Allocations: 1870)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:29 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:31 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:11:32 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:15:53 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:16:13 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:16:49 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:17:01 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:18:25 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:18:39 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:18:46 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1866)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:22:14 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:22:15 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:22:34 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:23:38 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:23:44 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:23:56 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:25:46 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:26:18 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:29:15 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:29:33 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:32:51 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:33:20 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:34:36 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1865)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:36:57 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 1.6ms | Allocations: 7970)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:37:07 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:37:23 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:38:50 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:39:17 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:43:10 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 02:43:23 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 08:49:18 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 6.2ms | ActiveRecord: 0.8ms | Allocations: 10522)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 08:49:29 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1887)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 08:49:37 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1887)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 08:49:55 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1887)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 08:50:07 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1887)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 08:50:18 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:00:59 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.8ms | Allocations: 2469)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:01:06 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:14:30 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.8ms | Allocations: 2469)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:16:02 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1869)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:16:41 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1869)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.9ms)[0m  [1m[32mINSERT INTO "movies" ("title", "director", "summary", "review", "rating", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Js-project"], ["director", "kay"], ["summary", "this is alot..."], ["review", "wow"], ["rating", 3], ["user_id", 1], ["created_at", "2021-02-18 14:56:35.766151"], ["updated_at", "2021-02-18 14:56:35.766151"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:57:17 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 0.9ms | Allocations: 10644)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 09:59:06 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2008)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:00:18 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 2008)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:03:44 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 2008)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:04:15 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 2008)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:04:24 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1990)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:05:33 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1990)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:05:36 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1990)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:05:53 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1990)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:07:48 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1990)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:07:53 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1990)
+
+
+Started GET "/api/v1/users/" for ::1 at 2021-02-18 10:33:58 -0500
+Processing by Api::V1::UsersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 1.9ms | Allocations: 4755)
+
+
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:34:13 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::UsersController):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:35:03 -0500
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/users_controller.rb:31: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/api/v1/users_controller.rb:31: syntax error, unexpected end, expecting end-of-input
+app/controllers/api/v1/users_controller.rb:31: syntax error, unexpected end, expecting end-of-input
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:35:27 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms | Allocations: 6705)
+
+
+  
+NoMethodError (undefined method `book_ids' for #<User:0x00007fd47006e400>):
+  
+app/controllers/api/v1/users_controller.rb:21:in `show'
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:35:53 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::UsersController):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:36:29 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.4ms | Allocations: 6034)
+
+
+  
+NoMethodError (undefined method `book_ids' for #<User:0x00007fffd140f938>):
+  
+app/controllers/api/v1/users_controller.rb:21:in `show'
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:37:06 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "movies"."id" FROM "movies" WHERE "movies"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `show'
+Completed 200 OK in 34ms (Views: 13.7ms | ActiveRecord: 2.1ms | Allocations: 8414)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:37:22 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.6ms | Allocations: 6843)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:37:25 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2661)
+
+
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:38:35 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "movies"."id" FROM "movies" WHERE "movies"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `show'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1634)
+
+
+Started GET "/api/v1/users/2" for ::1 at 2021-02-18 10:38:39 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 488)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:38:51 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 2658)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:39:01 -0500
+Processing by Api::V1::MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 2657)
+
+
+Started GET "/api/v1/users/1" for ::1 at 2021-02-18 10:39:06 -0500
+Processing by Api::V1::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:19:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "movies"."id" FROM "movies" WHERE "movies"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `show'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1634)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:43:07 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 2661)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:43:10 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 2661)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:43:26 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2661)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:43:29 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2661)
+
+
+Started GET "/api/v1/movies" for ::1 at 2021-02-18 10:43:32 -0500
+Processing by Api::V1::MoviesController#index as */*
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/api/v1/movies_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2661)
+
+
