@@ -1,12 +1,13 @@
-const endPoint = "http://localhost:3000/api/v1/movies"
+const endPoint = "http://localhost:3000/api/v1/movies";
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('dom content')  
   getMov()
-  eventListen()
+  //eventListen()
 })
 
 function eventListen() {
+  console.log('eventlisten')
   const createMovieForm = document.getElementById('create-movie-form')
 
   createMovieForm.addEventListener("submit", function(e) {
@@ -17,12 +18,14 @@ function eventListen() {
 }
 
 function getMov(){
+  console.log('getmov')
     fetch(endPoint)
     .then(response => response.json())
     .then(mov => {
       //  console.log(movies)\
       
       mov.data.forEach(movie  => {
+        console.log(movie)
         const movieEnhancement = `
           <div data-id=${movie.title}>
           <h1>${movie.attributes.title}</h1>
@@ -37,6 +40,7 @@ function getMov(){
 
         document.querySelector('#movie-container').innerHTML += movieEnhancement
       })
+      eventListen()
     })
 }
 
@@ -44,3 +48,13 @@ function createButtonSubmit(e) {
   e.preventDefault()
   console.log(e);
 }
+
+
+
+
+
+
+//const titleInput = document.querySelector('#input-titlte').value
+
+//:title, :director, :summary, :review, :rating -->
+
