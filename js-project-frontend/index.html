@@ -12,26 +12,24 @@
     <div class="page-title">LIST A MOVIE </div>
  
 --------------------------------------------------------------------------------------------------------------------
-<div id="movie-container">  <!-- :title, :director, :summary, :review, :rating -->
+____________________________________________________________________________________________________________________
 
-<div class="form-container">
 
-    <form id="create-movie-form" > 
-  <!--need to add more of my attributes to the form--> 
-      <input id='input-title' type="text" name="title" value="" placeholder="Enter your  name..." class="input-text">
-      <br><br>
-      <input id='input-director' name="director" rows="8" cols="80" value="" placeholder="Enter your movie summary..."></input>
-      <textarea id='input-summary' name="summary" rows="8" cols="80" value="" placeholder="Enter your movie summary..."></textarea>
-      <textarea id='input-review' name="review" rows="8" cols="80" value="" placeholder="Enter your movie summary..."></textarea>
-      <textarea id='input-rating' name="review" rows="8" cols="80" value="" placeholder="Enter your movie summary..."></textarea>
-      <br><br>
-      <input id= 'create-button' type="submit" name="submit" value="Create New Movie" class="submit">
-      <!--<input type="submit" value="Create New Movie">   -->   
-     
-    </form>
   
-  </div> 
-</div>
+      <div id="container">
+          <div id="form-container">
+              <form id="new-user-form">
+                  <label>Enter Your Name:</label>
+                  <input type="text" id="new-user-body" placeholder="Enter Your Name"/>
+                  <input type="submit"/>
+              </form>
+          </div>
+      </div>
+  <div id="movies-container" class="movies-container hidden" >
+
+  </div>
+</body>
+
 
  
 

@@ -1,60 +1,43 @@
-const endPoint = "http://localhost:3000/api/v1/movies";
+//The constructor method is a special method of a class for creating and initializing an object of that class.
+  //this. = the attributes for movie. 
+  //:title, :director, :summary, :review, :rating
 
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('dom content')  
-  getMov()
-  //eventListen()
-})
+class Movie { 
+  constructor(movie){
+    this.id = movie.id;
+    this.title = movie.title;
+    this.director = movie.director;
+    this.summary = movie.summary;
+    this.review = movie. rating;
 
-function eventListen() {
-  console.log('eventlisten')
-  const createMovieForm = document.getElementById('create-movie-form')
+  }
 
-  createMovieForm.addEventListener("submit", function(e) {
-    e.preventDefault()
-    console.log('hit')
-    createButtonSubmit(e)
-  })
+ // have to have a moive form(new) 
+  // static methods cant not be call from an object it can only be call from class itself,usually is used when you want to 
+  //do some something common for all objects so for
+
+  static newMovieFrom(user_id){
+    let body = document.getElementById('container');
+    console.log(form)
+    let form = 
+     `<form id="new-movie-form">
+      <label>Movie Title:</label>
+      <input type="text" id="movie-title" placeholder:"Title">
+      <label>Director:</label>
+      <input type="text" id="movie-director" placeholder:"Director">
+      <label>Summary:</label>
+      <input type="text" id="movie-summary" placeholder:"Summary">
+      <label>Review:</label>
+      <input type="text" id="movie-review" placeholder:"Review">
+      <label>What do you think about this Movie? 1-5:</label>
+      <input type="text" id="movie-rating">
+      </form>` 
+
+      body.insertAdjacentHTML('beforend', form)
+      Movie.postMovie(user_id)
+
+  }
+
+
+
 }
-
-function getMov(){
-  console.log('getmov')
-    fetch(endPoint)
-    .then(response => response.json())
-    .then(mov => {
-      //  console.log(movies)\
-      
-      mov.data.forEach(movie  => {
-        console.log(movie)
-        const movieEnhancement = `
-          <div data-id=${movie.title}>
-          <h1>${movie.attributes.title}</h1>
-          <h3>${movie.attributes.director}</h3>
-            <h2>${movie.attributes.summary}</h2>
-            <h4>${movie.attributes.review}</h4>
-            <p>${movie.attributes.rating}</p>
-            
-          
-          </div>
-          <br><br>`;
-
-        document.querySelector('#movie-container').innerHTML += movieEnhancement
-      })
-      eventListen()
-    })
-}
-
-function createButtonSubmit(e) {
-  e.preventDefault()
-  console.log(e);
-}
-
-
-
-
-
-
-//const titleInput = document.querySelector('#input-titlte').value
-
-//:title, :director, :summary, :review, :rating -->
-

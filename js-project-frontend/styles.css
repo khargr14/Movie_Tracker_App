@@ -32,7 +32,7 @@ body {
     font-size:  1em;
 }
 
-.books-container {
+.movies-container {
     background-color: rgb(197, 186, 175);
     opacity: 90%;
     width: 60%;
@@ -93,7 +93,7 @@ input[type=text] {
   }
 
   #new-movie-form {
-    background: white;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,6 +104,8 @@ input[type=text] {
     overflow: hidden;
     border-radius: 35px;
     font-size: 25px;
+
+    background-image: url("paper.gif")
   }
 
   .hidden {
