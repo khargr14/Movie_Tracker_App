@@ -13,6 +13,7 @@ class User {
 
 }
 
+// Creating a User fetch(Post request)
 static creatUser(User) {
     let newUserFrom = document.getElementById('new-user-form')
     newUserForm.addEventListener('submit', function(e){
@@ -43,5 +44,27 @@ static creatUser(User) {
             .catch(error => {
                 console.error('User class Error', error)
             })
-    })
+        })
+    }
+
+    displayUser(){
+        let body = document.getElementById('container');
+        body.innerHTML = ''
+        let div = document.createElement('div');
+        div.setAttribute('class', 'user-greeting');
+        let bc = document.getElementById('movies-continer')
+        bc.classList.remove('hidden')
+        let Greeting = document.createElement('p');
+        Greeting.innerHTML = `<h1> ${this.name}!! What did you see this week?</h1>`
+        div.appendChild(Greeting);
+        body.appendChild(div);
+
+        console.log( 'this movsss===>>', this.movies)
+
+        this.movies.forEach((movie) => {
+            let newMovie =new Movie(movie);
+            newMovie.appendMovie();
+        })
+        Movie.newMovieForm(this.id)
+    }
 }
