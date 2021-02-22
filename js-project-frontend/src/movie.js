@@ -1,5 +1,3 @@
-
-
 //The constructor method is a special method of a class for creating and initializing an object of that class.
   //this. = the attributes for movie. 
   //:title, :director, :summary, :review, :rating
