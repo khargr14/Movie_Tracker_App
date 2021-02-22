@@ -37,7 +37,49 @@ class Movie {
       Movie.postMovie(user_id)
 
   }
+}
 
 
+ // Creating a movie fetch(Post request)
+
+static postMovie(user_id) {
+
+  let newForm = document.getElementById('new-movie-form')
+  newForm.addEventListerner('submit', function(e){
+    e.preventDefault()
+    fetch('http://localhost:3000/api/v1/movies',{
+      method: 'POST',
+      headers: {
+          'Content-Type' : 'applicaiton/json',
+          'Accept' : 'applicaiton/json'
+      },
+      body: JSON.stringify({
+        movie: {
+            title: e.target.childern[1].vaule,
+            director: e.target.children[2].vaule,
+            summary: e.target.children[5].vaule,
+            review: e.target.children[7].vaule,
+            rating: e.target.children[9].vaule,
+            user_id :user_id
+        }
+      })
+
+    })
+    .then(res =>{
+      if(!res.ok){
+        throw new Error();
+    }
+    return res.json();
+
+    })
+    .then(json =>{
+        let newMovie = new Movie(json);
+        console(newMovie)
+        newMovie.appendMovie()
+    })
+    .catch(error =>{
+      console.error('Movie Class Error', error)
+    })
+  })
 
 }
