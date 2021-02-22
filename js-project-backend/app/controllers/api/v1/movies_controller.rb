@@ -1,34 +1,13 @@
 class Api::V1::MoviesController < ApplicationController
 
     def index
-        movies = Movie.all
-        #render json: movies
-        render json: MovieSerializer.new(movies)
-    end
-
-    def show 
-        movie = Movie.find(params[:id])
+        movies = Movie.all 
         render json: movies
     end
 
-
-    def create
-        movie.new(movie_params)
-        #movie = Movie.create(movie_params)
-        #movie.save!
-        if movie.save
-            render json: MovieSerializer.new(movie), status: :accepted
-        else 
-           # render json: {errors: movie errors full messages}, status: unprocessible-entity
-            #{errors: movie errors full messages}, status: unprocessible-
-            render json: {errors: movie.errors.full_messages}, status: :unprocessible_entity
-   
-        end 
-    end  
-
-    def update
-        movie = Movie.find(params[:id])
-        movie.update(movie_params)
+    def create 
+        movie = Movie.create(movie_params)
+        movie.save!
         render json: movie
     end
 
@@ -37,6 +16,8 @@ class Api::V1::MoviesController < ApplicationController
         render json: movie
     end
 
+    
+
     private
         def movie_params
             params.require(:movie).permit(:title, :director, :summary, :review, :rating, :user_id )
@@ -44,3 +25,4 @@ class Api::V1::MoviesController < ApplicationController
 
 
 end
+
