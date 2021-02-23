@@ -82,12 +82,8 @@ class Movie {
       let bc = document.getElementsByClassName('movies-container')
       let p = document.createElement('p')
       p.setAttribute('data-id', this.id)
-      p.innerHTML = `Title: ${this.title}</br>
-                     Director:${this.director}</br>
-                     Summary:${this.summary}</br>
-                     review:${this.review}</br>
-                     Rating:${this.rating}</br>`
-     // p.innerHTML = `Title: ${this.title}</br>Director:${this.director}</br>Summary:${this.summary}</br>Review:${this.review}</br>Rating:${this.rating}`
+      
+     p.innerHTML = `Title: ${this.title}</br>Director:${this.director}</br>Summary:${this.summary}</br>Review:${this.review}</br>Rating:${this.rating}`
       let deleteButton = `<button type="button" id="${this.id}">X</button>`
       p.insertAdjacentHTML('beforeend', deleteButton)
       bc[0].appendChild(p)

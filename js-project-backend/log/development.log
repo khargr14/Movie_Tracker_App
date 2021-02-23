@@ -4513,3 +4513,39 @@ Processing by Api::V1::UsersController#index as HTML
 Completed 200 OK in 28ms (Views: 19.1ms | ActiveRecord: 1.3ms | Allocations: 4854)
 
 
+Started POST "/api/v1/users" for ::1 at 2021-02-22 18:46:49 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end
+Started POST "/api/v1/users" for ::1 at 2021-02-22 18:46:50 -0500
+  
+SyntaxError (/mnt/c/Users/kay_h/Movie_Tracker_App/js-project-backend/app/controllers/api/v1/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/users_controller.rb:33: syntax error, unexpected end-of-input, expecting end
+Started POST "/api/v1/users" for ::1 at 2021-02-22 19:11:23 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"keesha"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "keesha"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/api/v1/users/1
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms | Allocations: 6451)
+
+
+Started GET "/api/v1/users/1" for ::1 at 2021-02-22 19:11:23 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"1", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:20:in `show'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:21:in `show'
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 13792)
+
+
