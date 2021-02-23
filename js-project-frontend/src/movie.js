@@ -92,7 +92,7 @@ class Movie {
   }
                                           
   
-  deleteMoive(button) {
+  deleteMovie(button) {
       button.addEventListener('click', function(e){
           e.preventDefault()
           fetch(`http://localhost:3000/api/v1/movies/${e.target.parentNode.dataset.id}`, {
