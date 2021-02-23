@@ -1,7 +1,7 @@
 body {
     margin: 10;
     padding: 10;
-     background-color: rgb(39, 1, 1); 
+     background-color: rgb(119, 50, 3); 
    /* background-image: url('\flatiron\Js and Ror'.jepg);*/
     text-align: center;
   }
@@ -33,11 +33,11 @@ body {
 }
 
 .movies-container {
-    background-color: rgb(197, 186, 175);
+    background-color: rgb(119, 50, 3);
     opacity: 90%;
     width: 60%;
     border: 5px solid black;
-    /* padding: 30px; */
+    
     font-size:  1em;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -63,9 +63,9 @@ input[type=text] {
 
   input[type=button], input[type=submit], input[type=reset] {
     background-color:rgb(241, 175, 175);
-    border: solid black ;
+    border: solid rgb(58, 2, 83) ;
     border-radius: 12px;
-    color: rgb(88, 4, 136);
+    color: rgb(57, 2, 88);
     padding: 16px 32px;
     text-decoration: none;
     margin: 15px 2px;
@@ -75,7 +75,7 @@ input[type=text] {
   #new-user-form {
       
       
-      background: rgb(39, 1, 1); 
+      background: rgb(119, 50, 3); 
       
       display: flex;
       flex-direction: column;
