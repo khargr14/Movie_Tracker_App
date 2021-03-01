@@ -7,14 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
 class User {
     constructor(user) {
         console.log('conss==>>', user)
-        this.id = user.id;
+        for (const key in user) {
+            this[key] = user[key];
+        }
+
+        /*this.id = user.id;
         this.name = user.name;
-        this.movies = user.movies;
+        this.movies = user.movies;*/
      
     }
 // Creating a movie fetch(Post request)
     static createUser(user) {
-        let newUserForm = document.getElementById('new-user-form')
+        const newUserForm = document.getElementById('new-user-form')
         newUserForm.addEventListener('submit', function(e){
             e.preventDefault();
             fetch('http://localhost:3000/api/v1/users', {
@@ -35,8 +39,8 @@ class User {
                     }
                     return res.json();
                 })
-                .then (user => {
-                    let newUser = new User(user.data.attributes)
+                .then(user => {
+                    const newUser = new User(user.data ? user.data.attributes : user)
                     console.log(user)
                     newUser.displayUser();
                 })
@@ -48,21 +52,21 @@ class User {
     }
 
     displayUser() {
-        let body = document.getElementById('container');
+        const body = document.getElementById('container');
         body.innerHTML = ''
-        let div = document.createElement('div');
+        const div = document.createElement('div');
         div.setAttribute('class', 'user-greeting');
-        let bc = document.getElementById('movies-container')
-        bc.classList.remove('hidden')
-        let Greeting = document.createElement('p');
+        const moviesContainer = document.getElementById('movies-container')
+        moviesContainer.classList.remove('hidden')
+        const Greeting = document.createElement('p');
         Greeting.innerHTML = `<h1>Hey ${this.name}! What did you see this week?</h1>`
         div.appendChild(Greeting);
         body.appendChild(div);
 
         console.log('this movss==>>', this.movies)
        
-        this.movies.forEach((movie) => {
-                let newMovie = new Movie(movie);
+        this.movies?.forEach((movie) => {
+                const newMovie = new Movie(movie);
                 newMovie.appendMovie();
             })
     
