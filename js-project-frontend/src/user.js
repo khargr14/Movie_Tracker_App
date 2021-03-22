@@ -1,6 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => { 
 
-    User.createUser();
+//     User.createUser(); 
+    
+// })
+
+document.addEventListener('DOMContentLoaded', function() { 
+
+    User.createUser(); 
+    
 })
 
 
@@ -18,6 +25,7 @@ class User {
     }
 // Creating a movie fetch(Post request)
     static createUser(user) {
+        console.log(user)
         const newUserForm = document.getElementById('new-user-form')
         newUserForm.addEventListener('submit', function(e){
             e.preventDefault();

@@ -2,6 +2,8 @@
 //this. = the attributes for movie. 
 //:title, :director, :summary, :review, :rating
 
+
+
 class Movie {
     constructor(movie) {
         for (const key in movie) {
@@ -90,13 +92,35 @@ class Movie {
         const pTag = document.createElement('p')
         pTag.setAttribute('data-id', this.id)
         pTag.innerHTML = `Title: ${this.title}</br>Director:${this.director}</br>Summary:${this.summary}</br>Review:${this.review}</br>Rating:${this.rating}`
+        const likeButton = `<button type="button" id="like_${this.id}">Like</button>`
         const deleteButton = `<button type="button" id="${this.id}">X</button>`
+        const likesNumber = `<span class="likeNumber">0</span>`
+        pTag.insertAdjacentHTML('beforeend', likeButton)
+        pTag.insertAdjacentHTML('beforeend', likesNumber)
         pTag.insertAdjacentHTML('beforeend', deleteButton)
         moviesContainer[0].appendChild(pTag)
-        const button = document.getElementById(`${this.id}`)
-        this.deleteMovie(button)
+        const deleteBtn = document.getElementById(`${this.id}`)
+        const likeBtn = document.getElementById(`like_${this.id}`)
+        this.likeMovie(likeBtn)
+        this.deleteMovie(deleteBtn)
     }
 
+
+
+    likeMovie(button){
+        console.log('setting up like butto n', button)
+        button.addEventListener('click', (e) => {
+            console.log('LIKE!')
+            const spanEl = e.target.parentElement.querySelector('.likeNumber');
+            let num = +spanEl.innerText;
+            spanEl.innerText = num+1;
+
+            // spanEl.innerText = ++spanEl.innerText;
+            //document.getElementById('inc').value = ++i;
+        } )
+        
+   
+    }
 
     deleteMovie(button) {
         button.addEventListener('click', (e) => {
