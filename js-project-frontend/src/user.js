@@ -24,8 +24,8 @@ class User {
      
     }
 // Creating a movie fetch(Post request)
-    static createUser(user) {
-        console.log(user)
+    static createUser() {
+        //console.log(user)
         const newUserForm = document.getElementById('new-user-form')
         newUserForm.addEventListener('submit', function(e){
             e.preventDefault();
@@ -66,9 +66,9 @@ class User {
         div.setAttribute('class', 'user-greeting');
         const moviesContainer = document.getElementById('movies-container')
         moviesContainer.classList.remove('hidden')
-        const Greeting = document.createElement('p');
-        Greeting.innerHTML = `<h1>Hey ${this.name}! What did you see this week?</h1>`
-        div.appendChild(Greeting);
+        const gpreeting = document.createElement('p');
+        greeting.innerHTML = `<h1>Hey ${this.name}! What did you see this week?</h1>`
+        div.appendChild(greeting);
         body.appendChild(div);
 
         console.log('this movss==>>', this.movies)

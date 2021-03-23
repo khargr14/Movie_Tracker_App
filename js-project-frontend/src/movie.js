@@ -108,6 +108,7 @@ class Movie {
 
 
     likeMovie(button){
+        
         console.log('setting up like butto n', button)
         button.addEventListener('click', (e) => {
             console.log('LIKE!')
